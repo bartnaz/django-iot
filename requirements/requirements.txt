@@ -1,0 +1,11 @@
+celery==5.0.5
+Django==3.2
+psycopg2-binary==2.8.6
+redis==3.5.3
+djangorestframework==3.12.4
+pytest-django==4.2.0
+pytest-pythonpath==0.7.3
+sendgrid==6.6.0
+pytest-mock == 3.5.1
+Pillow==8.2.0
+djangorestframework-simplejwt==4.6.0
