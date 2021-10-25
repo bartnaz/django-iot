@@ -40,3 +40,7 @@ def login(request):
             'form': form
         }
     )
+
+
+def profile(request):
+    return render(request, 'users/profile.html')
