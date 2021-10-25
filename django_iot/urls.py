@@ -16,7 +16,10 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 
+# this will link to our users url's path('user/', include('users.urls'))
+
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('user/', include('users.urls'))
+    path('user/', include('users.urls')),
+    # path('user/', include("django.contrib.auth.urls")),
 ]

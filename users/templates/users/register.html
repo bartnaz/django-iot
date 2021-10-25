@@ -1,19 +1,20 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <title>Title</title>
-    </head>
-    <body>
-        <h1>Rejestracja</h1>
-        <div>
-            <form method="POST">
-                {% csrf_token %}
-                {{ form }}
-                <input type="submit" value="Zarejestruj">
+{% extends "users/base.html" %}
+{% block content %}
+{% load crispy_forms_tags %}
+<h1>Rejestracja</h1>
+<div class="content-section">
+    <form method="POST">
+        {% csrf_token %}
+        {{ form|crispy }}
+        <input type="submit" value="Zarejestruj">
 
-            </form>
-        </div>        
+    </form>
+    <div class="border-top pt-3">
+        <small class="text-muted">
+            Already Have An Account? <a class="ml-2" href="{% url 'login' %}>Sign In</a>
+        </small>
+    </div>
+</div>
 
-    </body>   
-</html>
+{% endblock %}
+

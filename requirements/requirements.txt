@@ -9,3 +9,4 @@ sendgrid==6.6.0
 pytest-mock == 3.5.1
 Pillow==8.2.0
 djangorestframework-simplejwt==4.6.0
+django_crispy_forms
